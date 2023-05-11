@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>T I L E V U</title>
+
+	<!-- meta -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+	<link rel="stylesheet" href="assets/site/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/site/css/ionicons.min.css">
+	<link rel="stylesheet" href="assets/site/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/site/css/owl.theme.css">
+	<link rel="stylesheet" href="assets/site/css/animate.css">
+    <link rel="stylesheet" href="assets/site/css/style.css">
+</head>
+<style>
+    a{text-decoration: none; color:inherit;}
+    a:hover{color:inherit;}
+    #nav-bar{z-index:1;
+        transition: 1s; 
+        background-color: rgba(0, 0, 0, 0.5); 
+        position:fixed; top:0; left:0; right: 0;
+    }
+    .container-nav{display:flex; color:white; align-items: center;}
+    #logo{width:70%; padding:15px; font-size:2em; word-wrap:normal; font-weight: 600;}  
+    #menu{
+        width:30%;
+        display:flex; 
+        justify-content: space-around; 
+        align-items: center;
+        text-align: right;
+    }
+    .nav-buttom{font-size:1.2em; border:solid 2px white; padding:5px 10px;}
+    .menu{ font-size:3em}
+    #bg-main{
+        background-image: url("assets/img/bg-main.svg"); 
+        width:100%; 
+        height: 90vh; 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .btn-whatsapp{width:100%; max-width: 300px; min-width:250px; margin:5px;}
+    .btn-submit{max-width: 500px; margin:auto; font-size:2em;}
+    .btn-submit button{padding:10px 50px}
+
+    @media all and (max-width: 985px) {
+        #menu{width:60%}
+        .nav-buttom{font-size:1em; border:solid 1.5px white; padding:5px;}
+        #bg-main{
+            background-image: url("assets/img/bg-main-mb.svg"); 
+            height:100vh; 
+        }
+
+    }
+    
+    @media all and (max-width: 720px) {
+        #logo{width:50%; font-size:1.4em;}
+        #menu{width:50%}
+        .nav-buttom{font-size:1em; border:solid 1px white; padding:5px;}
+        .login{display:none;}
+        #bg-main{
+            background-image: url("assets/img/bg-main-mb.svg");  
+            height: 100vh; 
+        }
+        .btn-submit{max-width: 400px; margin:auto; font-size:1.2em;}
+        .btn-submit button{padding:10px 20px}
+
+    }
+
+</style>
+<body id="body">
+    <div id="preloader"></div>
+    <div id="nav-bar">
+        <div class="container container-nav">
+            <div id="logo">T I L E V U</div>   
+            <div id="menu">
+                <a href="https://tilevu.com.br/auth2.0/register.php"><div class="nav-buttom">CRIAR CONTA</div></a>
+                <a href="https://tilevu.com.br/auth2.0/index.php"><div class="nav-buttom login">LOGIN</div></a>
+                <div class="toggle wow rotateIn menu" data-wow-delay="1s" hidden><i class="ion-navicon"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bg-main"></div>
+
+    <!-- ****************************** Features Section ************************** -->
+
+	<section id="features" class="block">
+		<section class="container">
+			<section class="row">
+				<div class="title-box"><h1 class="block-title wow animated rollIn">
+				<span class="bb-top-left"></span>
+				<span class="bb-bottom-left"></span>
+				Vantagens
+				<span class="bb-top-right"></span>
+				<span class="bb-bottom-right"></span>
+				</h1></div>
+			</section>
+
+			<section class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX" data-wow-delay="0.3s">
+						<i class="fas fa-rocket" style="color:#01CEB8;"></i>
+						<h2>Leve</h2>
+						<p>Um web app é muito mais leve, rápido e não precisa instalar nada</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX" data-wow-delay="0.3s">
+						<i class="fas fa-magic" style="color:#d35400;"></i>
+						<h2>Intuitivo</h2>
+						<p>Interface simples e fácil de usar</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX" data-wow-delay="0.3s">
+						<i class="fas fa-lock" style="color:#00ceb8;"></i>
+						<h2>Seguro</h2>
+						<p>Trabalhamos com infraestrutura segura na nuvem Azure da Microsoft.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX" data-wow-delay="0.6s">
+						<i class="fas fa-calendar-check" style="color:#c0392b;"></i>
+						<h2>Produtivo</h2>
+						<p>Deixe suas vendas no automático, recebendo apenas os pedidos prontos. </p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX" data-wow-delay="0.6s">
+						<i class="fas fa-file-invoice-dollar" style="color:#27ae60;"></i>
+						<h2>Preço Fixo</h2>
+						<p>Chega de pagar altas taxas para os apps do mercado. Com nosso App você sabe exatamente quanto gastou no final do mês.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX" data-wow-delay="0.6s">
+						<i class="fas fa-store-alt" style="color:#2c3e50;"></i>
+						<h2>Personalizável</h2>
+						<p>Destaque a sua marca, coloque seu banner. Com o app Tilevu você personaliza sua loja e ganha mais credibilidade com seus clientes.</p>
+					</div>
+				</div>
+			</section>
+			<div class="clearfix"></div>
+		</section>
+	</section>
+
+    <!-- ****************************** Gallery Section ************************** -->
+
+	<section id="gallery" class="block">
+		<section class="container">
+			<section class="row">
+				<div class="title-box"><h1 style="color:white;" class="block-title wow animated rollIn">
+				<span class="bb-top-left" style="border-color: #fff; "></span>
+				<span class="bb-bottom-left" style="border-color: #fff;"></span>
+				SUA LOJA ONLINE
+				<span class="bb-top-right" style="border-color: #fff; "></span>
+				<span class="bb-bottom-right" style="border-color: #fff; "></span>
+				</h1></div>
+			</section>
+			<section class="row">
+				<div class="col-xs-12">
+					<div id="screenshots" class="owl-carousel owl-theme">
+					  <div class="item"><img src="assets/img/1.png" class="img_res wow animated zoomIn"></div>
+					  <div class="item"><img src="assets/img/2.png" class="img_res wow animated zoomIn"></div>
+					  <div class="item"><img src="assets/img/3.png" class="img_res wow animated zoomIn"></div>
+					  <div class="item"><img src="assets/img/4.png" class="img_res wow animated zoomIn"></div>
+					  <div class="item"><img src="assets/img/5.png" class="img_res wow animated zoomIn"></div>
+					</div>
+                    <div class="customNavigation">
+                        <a class="btn prev gallery-nav wow animated bounceInLeft"><i class="ion-ios-arrow-left"></i></a> 
+                        <a class="btn next gallery-nav wow animated bounceInRight"><i class="ion-ios-arrow-right"></i></a>
+                    </div>
+				</div>
+			</section>
+		</section>
+	</section>
+
+    <br><br><br>
+    <section class="container">
+        <section class="row">
+            <div class="title-box"><h1 class="block-title wow animated rollIn">
+            <span class="bb-top-left" ></span>
+            <span class="bb-bottom-left"></span>
+                SUAS VENDAS
+            <span class="bb-top-right"></span>
+            <span class="bb-bottom-right"></span>
+            </h1></div>
+        </section>
+        <section class="row">
+            <img src="assets/img/bg3.jpg" style="width:100%;">
+        </section>
+    </section>
+    <br><br><br>
+
+    <img src="assets/img/bg2.jpg" style="width:100%;">
+	
+
+    <!-- ****************************** Subscribe Section ************************** -->
+
+	<section id="subscribe">
+		<section class="container">
+			<section class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+					<p class="susbcribe-text">
+					<strong>AINDA TEM DÚVIDA?</strong><br>
+                    Deixe seu nome e Whatsapp que nós entramos em contato.</p>
+				</div>
+			</section>
+            <div style="display:flex; justify-content: center; flex-wrap:wrap;">
+                <input class="btn-whatsapp" type="text" id="exampleInputEmail1" placeholder="Seu Nome">
+                <input class="btn-whatsapp" type="text" id="exampleInputEmail1" placeholder="Whatsapp">
+            </div><br>
+            <div class="btn-submit">
+                <button class="btn-custom" onclick="sendMail()">Entrar em contato comigo ></button>
+            </div>
+            
+		</section>
+		<section class="container">
+			
+		</section>
+	</section>
+
+    <img src="assets/img/bg4.jpg" style="width:100%;">
+	
+    <!-- ****************************** Team Section ************************** -->
+
+	<section id="team" class="block">
+		<section class="container">
+			<section class="row">
+				<div class="col-md-12">
+					<div class="title-box">
+						<h1 class="block-title wow animated rollIn">
+							<span class="bb-top-left"></span>
+							<span class="bb-bottom-left"></span>
+								Nosso Time
+							<span class="bb-top-right"></span>
+							<span class="bb-bottom-right"></span>
+						</h1>
+					</div>
+				</div>
+			</section>
+			<section class="row justify-content-center" style="text-align: center;">
+				
+				<section class="col-md-4 col-sm-6">
+					<div class="team-member wow animated fadeIn" data-wow-delay=="0.3s">
+						<img src="assets/img/d3.png" class="img_res team-pic">
+						<h2 class="wow animated fadeInDown" data-wow-delay=="0.7s">Caio Lima</h2>
+						<p class="wow animated fadeIn" data-wow-delay=="0.7s">Desenvolvedor | Web Design</p>
+						
+					</div>
+				</section>
+				<section class="col-md-4 col-sm-6">
+					<div class="team-member wow animated fadeIn" data-wow-delay=="0.3s">
+						<img src="assets/img/d2.png" class="img_res team-pic">
+						<h2 class="wow animated fadeInDown" data-wow-delay=="0.7s">Sidney Miranda</h2>
+						<p class="wow animated fadeIn" data-wow-delay=="0.7s">Desenvolvedor | Backend</p>
+						
+					</div>
+				</section>
+				<section class="col-md-4 col-sm-6">
+					<div class="team-member wow animated fadeIn" data-wow-delay=="0.3s">
+						<img src="assets/img/d1.png" class="img_res team-pic">
+						<h2 class="wow animated fadeInDown" data-wow-delay=="0.7s">Luís Marini</h2>
+						<p class="wow animated fadeIn" data-wow-delay=="0.7s">Consultor</p>
+						
+					</div>
+				</section>
+				
+			</section>
+		</section>
+	</section>
+
+    <!-- ****************************** Footer ************************** -->
+
+		<section id="footer">
+			<section class="container">
+				<section class="row">
+					<div class="col-sm-6">
+						<span>Created By</span>
+						<h1 class="footer-logo">
+							<a href="https://mobspot.com.br/">Mobspot</a>
+						</h1>
+					</div>
+					<div class="col-sm-6">
+						<p class="copyright">All &copy; Copyright Reserved 2021</p>
+					</div>
+				</section>
+			</section>
+		</section>
+
+    <script>
+        document.getElementById('body').onscroll = function(){scrollBar()}
+
+        function scrollBar(){
+            //console.log(window.scrollY)
+            document.getElementById('nav-bar').style.backgroundColor = "#02CEB8"
+
+            if(window.scrollY == 0){
+                document.getElementById('nav-bar').style.backgroundColor = "rgba(0,0,0,0.5)"
+            }
+        }
+
+		function sendMail(){
+			console.log('OK')
+			let body = "email do site"
+
+			let data = {
+				title: 'Contato do Site',
+				subject: 'Contato do Site',
+				sendTo: 'sidney.miranda2013@gmail.com',
+				redirectTo: ''
+			}
+
+			$.get('https://tilevu.com.br/emails/send-mail-generic.php', {mailBody: body, data:data})
+		}
+
+        
+    </script>
+
+    <!-- All the scripts -->
+
+	<script src="assets/site/js/jquery-2.1.3.min.js"></script>
+	<script src="assets/site/js/bootstrap.min.js"></script>
+	<script src="assets/site/js/wow.min.js"></script>
+	<script src="assets/site/js/owl.carousel.js"></script>
+	<script src="assets/site/js/script.js"></script>
+</body>
+
+</html>
