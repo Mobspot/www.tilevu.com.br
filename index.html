@@ -211,16 +211,15 @@
 				<div class="col-sm-10 col-sm-offset-1">
 					<p class="susbcribe-text">
 					<strong>AINDA TEM DÚVIDA?</strong><br>
-                    Deixe seu nome e Whatsapp que nós entramos em contato.</p>
+                    Entre em contato.</p>
 				</div>
 			</section>
-            <div style="display:flex; justify-content: center; flex-wrap:wrap;">
-                <input class="btn-whatsapp" type="text" id="exampleInputEmail1" placeholder="Seu Nome">
-                <input class="btn-whatsapp" type="text" id="exampleInputEmail1" placeholder="Whatsapp">
             </div><br>
             <div class="btn-submit">
-                <button class="btn-custom" onclick="sendMail()">Entrar em contato comigo ></button>
-            </div>
+				<a href="">
+				<button class="btn-custom">Entrar em contato por Whatsapp</button>
+				</a>
+			</div>
             
 		</section>
 		<section class="container">
@@ -253,7 +252,7 @@
 					<div class="team-member wow animated fadeIn" data-wow-delay=="0.3s">
 						<img src="assets/img/d3.png" class="img_res team-pic">
 						<h2 class="wow animated fadeInDown" data-wow-delay=="0.7s">Caio Lima</h2>
-						<p class="wow animated fadeIn" data-wow-delay=="0.7s">Desenvolvedor | Web Design</p>
+						<p class="wow animated fadeIn" data-wow-delay=="0.7s">Dev | Web Design</p>
 						
 					</div>
 				</section>
@@ -261,7 +260,7 @@
 					<div class="team-member wow animated fadeIn" data-wow-delay=="0.3s">
 						<img src="assets/img/d2.png" class="img_res team-pic">
 						<h2 class="wow animated fadeInDown" data-wow-delay=="0.7s">Sidney Miranda</h2>
-						<p class="wow animated fadeIn" data-wow-delay=="0.7s">Desenvolvedor | Backend</p>
+						<p class="wow animated fadeIn" data-wow-delay=="0.7s">Dev | Fullstack</p>
 						
 					</div>
 				</section>
@@ -269,7 +268,7 @@
 					<div class="team-member wow animated fadeIn" data-wow-delay=="0.3s">
 						<img src="assets/img/d1.png" class="img_res team-pic">
 						<h2 class="wow animated fadeInDown" data-wow-delay=="0.7s">Luís Marini</h2>
-						<p class="wow animated fadeIn" data-wow-delay=="0.7s">Consultor</p>
+						<p class="wow animated fadeIn" data-wow-delay=="0.7s">Consultor de Vendas</p>
 						
 					</div>
 				</section>
@@ -290,7 +289,7 @@
 						</h1>
 					</div>
 					<div class="col-sm-6">
-						<p class="copyright">All &copy; Copyright Reserved 2021</p>
+						<p class="copyright">All &copy; Copyright Reserved 2020</p>
 					</div>
 				</section>
 			</section>
@@ -300,29 +299,13 @@
         document.getElementById('body').onscroll = function(){scrollBar()}
 
         function scrollBar(){
-            //console.log(window.scrollY)
             document.getElementById('nav-bar').style.backgroundColor = "#02CEB8"
 
             if(window.scrollY == 0){
                 document.getElementById('nav-bar').style.backgroundColor = "rgba(0,0,0,0.5)"
             }
         }
-
-		function sendMail(){
-			console.log('OK')
-			let body = "email do site"
-
-			let data = {
-				title: 'Contato do Site',
-				subject: 'Contato do Site',
-				sendTo: 'sidney.miranda2013@gmail.com',
-				redirectTo: ''
-			}
-
-			$.get('https://tilevu.com.br/emails/send-mail-generic.php', {mailBody: body, data:data})
-		}
-
-        
+ 
     </script>
 
     <!-- All the scripts -->
